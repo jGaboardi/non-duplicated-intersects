@@ -6,6 +6,12 @@ non-duplicated intersects
 
 Launch the interactive binder by clicking here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jGaboardi/non-duplicated-intersects/master) All code cells can be run and edited.
 
+<p align="center">
+  <img src="within.png" width="240" height="240" />
+  <img src="intersects.png" width="240" height="240" />
+  <img src="nd-intersects.png" width="240" height="240" />
+</p>
+
 
 BiBTeX Citation
 ---------------
