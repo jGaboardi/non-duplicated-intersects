@@ -4,10 +4,7 @@ non-duplicated intersects
 
 ### Demonstrating an enhanced intersect operation with sjoin in GeoPandas 
 
-Launch the interactive binder by clicking here: [badge placeholder]
-
-All code cells can be run and edited.
-
+Launch the interactive binder by clicking here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jGaboardi/non-duplicated-intersects/master) All code cells can be run and edited.
 
 
 BiBTeX Citation
