@@ -5,7 +5,22 @@ non-duplicated intersects
 Demonstrating an enhanced intersect operation with sjoin in GeoPandas 
 
 
+BiBTeX Citation
+---------------
 
+If you use `non-duplicated-intersects` in a scientific publication, we would appreciate using the following citation:
+
+```tex
+@software{james_gaboardi_2020_3621063,
+  author       = {James Gaboardi},
+  title        = {{jGaboardi/non-duplicated-intersects}},
+  month        = jan,
+  year         = 2020,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.3621063},
+  url          = {https://doi.org/10.5281/zenodo.3621063}
+}
+```
 
 
 
