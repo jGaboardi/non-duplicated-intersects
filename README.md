@@ -1,6 +1,8 @@
 non-duplicated intersects
 =========================
-Demonstrating an enhanced intersect operation with sjoin in GeoPandas
+[![DOI](https://zenodo.org/badge/235506328.svg)](https://zenodo.org/badge/latestdoi/235506328)
+
+Demonstrating an enhanced intersect operation with sjoin in GeoPandas 
 
 
 
