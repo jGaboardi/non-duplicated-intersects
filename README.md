@@ -2,7 +2,12 @@ non-duplicated intersects
 =========================
 [![DOI](https://zenodo.org/badge/235506328.svg)](https://zenodo.org/badge/latestdoi/235506328)
 
-Demonstrating an enhanced intersect operation with sjoin in GeoPandas 
+### Demonstrating an enhanced intersect operation with sjoin in GeoPandas 
+
+Launch the interactive binder by clicking here: [badge placeholder]
+
+All code cells can be run and edited.
+
 
 
 BiBTeX Citation
