@@ -1,6 +1,6 @@
 non-duplicated intersects
 =========================
-![tag](https://img.shields.io/github/v/release/pysal/spaghetti?include_prereleases&sort=semver) [![DOI](https://zenodo.org/badge/235506328.svg)](https://zenodo.org/badge/latestdoi/235506328)
+![tag](https://img.shields.io/github/v/release/jGaboardi/non-duplicated-intersects?include_prereleases&sort=semver) [![DOI](https://zenodo.org/badge/235506328.svg)](https://zenodo.org/badge/latestdoi/235506328)
 
 ### Demonstrating an enhanced intersect operation with sjoin in GeoPandas 
 
