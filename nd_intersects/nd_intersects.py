@@ -1,4 +1,10 @@
 """Demonstrating an enhanced intersect operation with sjoin in GeoPandas
+
+To run the demonstration from the command line run the following (where './' 
+stipulates the current directory to save the demonstration plot):
+
+$ python nd_intersects.py ./
+
 """
 
 __author__ = "James Gaboardi <jgaboardi@gmail.com>"
@@ -8,7 +14,7 @@ import geopandas
 import matplotlib
 import string
 from shapely.geometry import Point, Polygon
-
+import sys
 
 def nd_intersects(pnts, pgons, ptid, pgid, keep_columns):
     """Create a non-duplicated intersects geodataframe.
@@ -216,7 +222,7 @@ def demo_polygons(pgid):
     return polygons
 
 
-def demo():
+def demo(save):
     """Run the demonstration synthetic example"""
     # Variable names
     PTID = "point_id"
@@ -235,9 +241,20 @@ def demo():
     print("------------------------------------------------------\n")
     # Non-duplicated intersects
     print("* Join: n-d intersects")
-    print(nd_intersects(points, polygons, PTID, PGID, KEEP_COLUMNS))
+    nd = nd_intersects(points, polygons, PTID, PGID, KEEP_COLUMNS)
+    print(nd)
     print("------------------------------------------------------\n")
+    if save:
+        title = "nd-intersects"
+        save += title
+        print(save)
+        orig = points.shape[0]
+        demo_plot_join(nd, polygons, PTID, PGID, title, orig, save=save)
 
 
 if __name__ == "__main__":
-    demo()
+    try:
+        save_plot_path = sys.argv[1]
+    except IndexError:
+        save_plot = None
+    demo(save_plot_path)
