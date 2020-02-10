@@ -216,8 +216,8 @@ def demo_polygons(pgid):
         [(0, -1), (1, -1), (1, 0), (0, 0)],
         [(-1, 0), (0, 0), (0, 1), (-1, 1)],
     ]
-    polygons = [Polygon(coords) for coords in polygon_coords]
     polygon_ids = {pgid: list(string.ascii_lowercase[-len(polygon_coords) :])}
+    polygons = [Polygon(coords) for coords in polygon_coords]
     polygons = geopandas.GeoDataFrame(polygon_ids, geometry=polygons)
     return polygons
 
@@ -247,14 +247,14 @@ def demo(save):
     if save:
         title = "nd-intersects"
         save += title
-        print(save)
         orig = points.shape[0]
         demo_plot_join(nd, polygons, PTID, PGID, title, orig, save=save)
+    return nd
 
 
 if __name__ == "__main__":
     try:
         save_plot_path = sys.argv[1]
     except IndexError:
-        save_plot = None
-    demo(save_plot_path)
+        save_plot_path = None
+    nd = demo(save_plot_path)
